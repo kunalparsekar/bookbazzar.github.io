@@ -1,0 +1,122 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage3, App_Web_dwvzwz0a" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            vertical-align: top;
+            width: 76%;
+            height: 100%;
+        }
+
+        .auto-style2 {
+            width: 100%;
+            height: 822px;
+            background-color:#9AD9EA;
+           /* background-image: url('/Book%20Bazaar/Images/project_logo1.jpg');*/
+        }
+
+        .auto-style4 {
+            padding-right: 6px;
+            float: left;
+            font-size: 18px;
+            width: 132px;
+            height: 100%;
+            margin-bottom: 3px;
+            margin-left: 0px;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .auto-style6 {
+            vertical-align: top;
+            width: 1%;
+            height: 100%;
+            background-color: #0066FF;
+        }
+
+        .auto-style7 {
+            font: 65px serif;
+            height: 90px;
+            width: 100%;
+            text-align: center;
+            background-color: #0066FF;
+            color: #FFFFFF;
+        }
+
+        .tdlogo {
+            height: 96px;
+            width: 206px;
+            text-align: center;
+        }
+        .auto-style9 {
+            width: 100%;
+            text-align: center;
+            background-color: #0066FF;
+            height: 23px;
+            color: #FFFFFF;
+        }
+
+        .auto-style15 {
+            width: 144px;
+            height: 30px;
+            color: #FEFFFF;
+            text-decoration: none;
+        }
+
+        .auto-style16 {
+            text-decoration: none;
+        }
+
+        .auto-style17 {
+            color: #FFFFFF;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 100%; width: 110%; background-color:#9AD9EA;">
+    <form id="form1" runat="server" class="auto-style8">
+
+        <table class="auto-style2">
+            <tr>
+           <td class="tdlogo"> 
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Book Bazaar/Images/project_logo2.jpg"   style="height: 105px; width: 172px" />
+            </td>
+                <td class="auto-style7"><strong>BOOK BAZAAR</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <ul class="auto-style4">
+                        <li class="auto-style15"><a href="Admin_view_users.aspx" class="auto-style16"><strong><span class="auto-style17">View Users</span></strong></a></li>
+                        <li class="auto-style15"><a href="Admin_view_orders.aspx" class="auto-style16"><strong><span class="auto-style17">View Orders</span></strong></a></li>
+                        <li class="auto-style15"><a href="AdminViewProducts.aspx" class="auto-style16"><strong><span class="auto-style17">View Products</span></strong></a></li>
+                        <li class="auto-style15"><a href="Admin_View_help.aspx" class="auto-style16"><strong><span class="auto-style17">View Help</span></strong></a></li>
+                        <li class="auto-style15"><a href="HomePage.aspx" class="auto-style16"><strong><span class="auto-style17">Logout</span></strong></a></li>
+
+                    <%--    <li class="auto-style13"><strong>
+                            <asp:Button ID="Button1" runat="server" Text="Logout" BackColor="Red" BorderStyle="None" CssClass="auto-style11" ForeColor="White" OnClick="Button1_Click" Style="background-color: #0066FF;" Height="30px" Width="97px" />
+                        </strong></li>--%>
+                        <li class="auto-style15">
+                    </ul>
+                </td>
+
+                <td colspan="2" class="auto-style1">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="auto-style9"><strong>Book Bazaar .Inc</strong></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

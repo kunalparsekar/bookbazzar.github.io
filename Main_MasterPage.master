@@ -1,0 +1,125 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage2, App_Web_dwvzwz0a" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 100%;            
+            background-color:#9AD9EA;
+        }
+        .auto-style2 {
+            height: 100%;
+            background-color: #0066FF;
+            width: 206px;
+            text-align: center;
+        }
+        .auto-style4 {
+            height: 100%;
+            background-color: #FFFFFF;
+        }
+        .auto-style8 {
+            height: 96px;
+            font-size: xx-large;
+            color: #FFFFFF;
+        }
+        .auto-style9 {
+            height: 96px;
+            width: 206px;
+            text-align: center;
+        }
+       
+        .auto-style10 {
+            color: #FFFFFF;
+        }
+       
+        .auto-style12 {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+       
+       
+        .auto-style13 {
+            height: 100%;
+             list-style-type: none;
+            width: 138px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }       
+       
+        .auto-style14 {
+            margin-left: 0px;
+            padding-top: 10px;
+            padding-right: 15px;
+            float: left;
+            padding-left: 15px;
+            font-size: 18px;
+            width: 100px;
+            text-align: left;
+        }
+       
+        .auto-style15 {
+            height: 827px;
+            margin-bottom: 0px;
+        }
+       
+        .newStyle1 {
+            background-image: url('/Book Bazaar/Images/bg3.jpg');
+            background-position: 100% 100%;
+        }
+       
+        .auto-style16 {
+            color: #FFFFFF;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body style="height: 100%; width: 100%; background-color:#9AD9EA;">
+    <form id="form1" runat="server" class="auto-style15">
+    <table class="auto-style4">
+        <tr >
+        <td class="auto-style9"> 
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Book Bazaar/Images/project_logo2.jpg"   style="height: 105px; width: 172px" />
+            </td>
+        <td colspan="2" style="text-align:center; background-color: #0066FF; font-size: 65px;" class="auto-style8">
+             <strong>BOOK BAZAAR</strong></td>
+           </tr>
+        <tr style=" vertical-align: top">
+            <td class="auto-style2">
+                 <ul class="auto-style13">
+                      <li class="auto-style14"><a href="HomePage.aspx" class="auto-style12"><strong><span class="auto-style10">Home</span></strong></a></li>
+                     <li class="auto-style14"><a href="ViewBook.aspx" class="auto-style12"><strong><span class="auto-style10">View Book</span></strong></a></li>
+                     <li class="auto-style14"><a href="Login.aspx" class="auto-style12"><strong><span class="auto-style10">Login</span></strong></a></li>
+                     <li class="auto-style14"><a href="Main_help.aspx" class="auto-style12"><strong><span class="auto-style10">Help</span></strong></a></li>
+                     <li class="auto-style14"><a href="About us.aspx" class="auto-style12"><strong><span class="auto-style10">About Us</span></strong></a></li>
+                     <li class="auto-style14"><a href="Main_Contact.aspx" class="auto-style12"><strong><span class="auto-style10">Contact Us</span></strong></a></li>
+                    </ul>
+                </td>
+        <td class="auto-style1">
+        <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            
+        
+            <p>
+                &nbsp;</p>
+        
+            
+        
+        </asp:ContentPlaceHolder>
+    </div></td>
+       </tr>  
+        <tr>
+             <td colspan="2" style="background-color: #0066FF;" class="auto-style16">
+             <strong>BOOK BAZZAR.Inc</strong></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

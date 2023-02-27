@@ -1,0 +1,128 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage2, App_Web_01kckbmx" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .style1
+        {
+            font-size: large;
+        }
+        .auto-style5 {
+            width: 104%;
+            height: 100%;
+        }
+        .auto-style6 {
+            float: left;
+            font-size: 18px;
+            padding-top: 10px;
+            padding-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 3px;
+            height: 99%;
+            width: 149px;
+            list-style-type: none;
+        }
+        .auto-style9 {         
+            padding-left: 0px;
+            font: 18px serif;
+            height: 100%;
+            background-color: #0066FF;
+            text-decoration: underline;
+            width: 128px;
+        }
+        .auto-style10 {
+            width: 100%;
+            height: 104px;
+            font-size: xx-large;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .auto-style11 {
+            height: 100%;
+            width: 100%;
+        }
+        .auto-style19 {
+            vertical-align:top;
+            width: 5%;
+            height: 100%;
+            color: #FFFFFF;
+        }
+        .auto-style20 {
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .auto-style21 {
+            height: inherit;
+            
+            /*background-image: url('/Book Bazaar/Images/project_logo1.jpg');*/
+            width: 100%;
+        }
+        .auto-style23 {
+            text-decoration: none;
+        }
+        .auto-style24 {
+            width: 144px;
+            text-align: center;
+            height: 33px;
+           
+        }
+        .auto-style26 {
+            width: 144px;
+            text-align: center;
+            height: 33px;
+            margin-top: 0px;
+        }
+        .tdlogo {
+            height: 96px;
+            width: 206px;
+            text-align: center;
+        }
+        </style>
+</head>
+<body style="height: 868px; width: 100%; background-color:#9AD9EA;">
+    <div style="height: inherit;">
+    <form id="form1" runat="server" class="auto-style21">
+        <table class="auto-style11">
+            <tr>
+                 <td class="tdlogo"> 
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Book Bazaar/Images/project_logo2.jpg"   style="height: 105px; width: 172px" />
+            </td>
+        <td style="background-color: #0066FF; font-size: 65px;" class="auto-style10">
+                    <strong>BOOK BAZAAR</strong></td>
+            </tr>
+            <tr style=" vertical-align: top">
+                <td class="auto-style9">
+                    <ul class="auto-style6">
+                        <li class="auto-style26"><a href="sellbook.aspx" class="auto-style23"><strong><span class="auto-style19">Add Book</span></strong></a></li>
+                        <li class="auto-style24" style="height: 30px"><a href="UserViewBook.aspx" class="auto-style23"><strong><span class="auto-style19">Buy Books</span></strong></a></li>
+                        <li class="auto-style24"><a href="UserOrder.aspx" class="auto-style23"><strong><span class="auto-style19">My Orders</span></strong></a></li>
+                        <li class="auto-style24"><a href="AddedBooks.aspx" class="auto-style23"><strong><span class="auto-style19">Added Books</span></strong></a></li>      
+                        <li class="auto-style24"><a href="user_help.aspx" class="auto-style23"><strong><span class="auto-style19">Help</span></strong></a></li>
+                        <li class="auto-style24"><a href="User_contact.aspx" class="auto-style23"><strong><span class="auto-style19">Contact Us</span></strong></a></li>
+                        <li class="auto-style24"><a href="HomePage.aspx" class="auto-style23"><strong><span class="auto-style19">Logout</span></strong></a></li>
+                        <%--<li class="auto-style25"><strong><asp:Button ID="Button1" runat="server" Text="Logout" BackColor="Red" BorderStyle="None" CssClass="auto-style11" ForeColor="White" OnClick="Button1_Click" style="background-color: #0066FF;" Height="30px" Width="97px" /> </strong></li>--%>
+                    </ul>
+                </td>
+            
+                <td class="auto-style5">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 30px; background-color: #0066FF;">
+             <td colspan="2" class="auto-style20"> <strong>Book Bazaar.Inc</strong></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
